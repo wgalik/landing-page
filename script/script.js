@@ -1,32 +1,41 @@
 $(document).ready(function () {
-  $("#hamburger").on("click", function () {
-    $(".nav-menu").toggleClass("active");
-    if ($(".nav-menu").hasClass("active")) {
-      $("#home").css("marginTop", 210);
+  const navMenu = $(".nav-menu");
+  const hamburger = $("#hamburger");
+  const home = $("#home");
+
+  hamburger.on("click", function () {
+    navMenu.toggleClass("active");
+    hamburger.toggleClass("open");
+    if (navMenu.hasClass("active")) {
+      home.css("marginTop", 210);
     } else {
-      $("#home").css("marginTop", 60);
+      home.css("marginTop", 60);
     }
   });
 
   $("#logo").on("click", function () {
-    if ($(".nav-menu").hasClass("active")) {
-      $(".nav-menu").removeClass("active");
-      $("#home").css("marginTop", 60);
+    if (navMenu.hasClass("active")) {
+      closeMenu();
     }
   });
   $(".nav-menu li").on("click", function () {
-    if ($(".nav-menu").hasClass("active")) {
-      $(".nav-menu").removeClass("active");
-      $("#home").css("marginTop", 60);
+    if (navMenu.hasClass("active")) {
+      closeMenu();
     }
   });
 
-  $("#portfolio button").on("click", function (event) {
+  function closeMenu() {
+    navMenu.removeClass("active");
+    home.css("marginTop", 60);
+  }
+
+  $("#portfolio button").on("click", function () {
     $("#portfolio button").css("textDecoration", "none");
     const gridContainer = $(".grid-container");
+    const newClass = $(this).attr("id");
     gridContainer.hide();
-    gridContainer.removeClass().addClass(`grid-container ${event.target.id}`);
+    gridContainer.removeClass().addClass(`grid-container ${newClass}`);
     gridContainer.fadeIn(1000);
-    $(`#${event.target.id}`).css("textDecoration", "underline");
+    $(`#${newClass}`).css("textDecoration", "underline");
   });
 });

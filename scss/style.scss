@@ -3,6 +3,7 @@
 $mainFont: "Lato", sans-serif;
 $secondFont: "Playfair Display", serif;
 $fontColor: rgb(225, 225, 225);
+$darkGrey: rgb(58, 58, 58);
 
 $grid-breakpoints: (
   xs: 0,
@@ -84,14 +85,13 @@ body {
       .nav-menu {
         @include flexbox;
         display: none;
-        // align-items: center;
         justify-items: center;
         gap: 15px;
         padding: 20px 20px 10px;
         position: absolute;
         top: 50px;
         left: -10px;
-        background-color: rgba(255, 255, 255, 0.25);
+        background-color: $darkGrey;
         width: 100vw;
         @media (min-width: breakpoint(sm)) {
           display: flex;
@@ -141,7 +141,20 @@ body {
         span {
           height: 3px;
           width: 100%;
-          background-color: beige;
+          background-color: $fontColor;
+        }
+        &.open {
+          span {
+            &:nth-child(1) {
+              opacity: 0;
+            }
+            &:nth-child(2) {
+              transform: rotate(45deg);
+            }
+            &:nth-child(3) {
+              transform: translateY(-8.5px) rotate(-45deg);
+            }
+          }
         }
       }
     }
@@ -151,7 +164,7 @@ body {
     section {
       width: 100%;
       padding: 15px;
-      // border: 2px solid red;
+      border: 2px solid red;
       background-color: rgb(255, 255, 255);
       scroll-margin-top: 60px;
       &#home {
@@ -205,7 +218,7 @@ body {
           line-height: 1;
           &:hover {
             background-color: rgb(0, 0, 0);
-            color: white;
+            color: $fontColor;
           }
           a {
             @include link;
@@ -222,7 +235,7 @@ body {
 
       article {
         @include flexbox;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: $darkGrey;
         padding: 20px;
         box-shadow: 0 0 5px black;
         @media (min-width: breakpoint(sm)) {
@@ -290,14 +303,20 @@ body {
       }
       .grid-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         gap: 10px;
         width: 100%;
+        aspect-ratio: 1 /1;
         max-width: 1200px;
-        aspect-ratio: 1 / 1;
         @media (min-width: breakpoint(sm)) {
           width: 75%;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+        }
+        @media (min-width: breakpoint(md)) {
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(2, 1fr);
         }
         .grid-item {
           @include bg-image;
@@ -453,7 +472,6 @@ body {
   }
 
   footer {
-    // height: 80px;
     width: 100vw;
     background-color: 4;
     padding: 15px;
