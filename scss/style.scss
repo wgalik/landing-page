@@ -178,7 +178,7 @@ body {
             transparent 55%,
             rgb(255, 255, 255)
           ),
-          url("\.\./images/stuart-bailey-8106891_1920.jpg");
+          url("../images/stuart-bailey-8106891_1920.jpg");
         @include bg-image;
         margin-top: 60px;
         color: black;
@@ -246,7 +246,7 @@ body {
           max-width: 1200px;
         }
         .img {
-          background-image: url("\.\./images/man-2178721_1920.jpg");
+          background-image: url("../images/man-2178721_1920.jpg");
           @include bg-image;
           width: 75%;
           aspect-ratio: 1 / 1;
@@ -328,74 +328,74 @@ body {
 
         &.portraits {
           .item-1 {
-            background-image: url(\.\./images/portraits/dark-portraits-4717873_1920.jpg);
+            background-image: url(../images/portraits/dark-portraits-4717873_1920.jpg);
           }
           .item-2 {
-            background-image: url(\.\./images/portraits/girl-1607404_1920.jpg);
+            background-image: url(../images/portraits/girl-1607404_1920.jpg);
           }
           .item-3 {
-            background-image: url(\.\./images/portraits/peter-of-moravia-7468859_1920.jpg);
+            background-image: url(../images/portraits/peter-of-moravia-7468859_1920.jpg);
           }
           .item-4 {
-            background-image: url(\.\./images/portraits/portraits-2781035_1920.jpg);
+            background-image: url(../images/portraits/portraits-2781035_1920.jpg);
             grid-column: 2/3;
             grid-row: 2/4;
           }
           .item-5 {
-            background-image: url(\.\./images/portraits/portraits-639856_1920.jpg);
+            background-image: url(../images/portraits/portraits-639856_1920.jpg);
             grid-column: 1/2;
             grid-row: 3/5;
           }
           .item-6 {
-            background-image: url(\.\./images/portraits/travel-4947206_1920.jpg);
+            background-image: url(../images/portraits/travel-4947206_1920.jpg);
           }
         }
         &.weddings {
           .item-1 {
-            background-image: url(\.\./images/weddings/bride-6230420_1920.jpg);
+            background-image: url(../images/weddings/bride-6230420_1920.jpg);
             grid-column: 1/2;
             grid-row: 1/3;
           }
           .item-2 {
-            background-image: url(\.\./images/weddings/bride-6388640_1920.jpg);
+            background-image: url(../images/weddings/bride-6388640_1920.jpg);
           }
           .item-3 {
-            background-image: url(\.\./images/weddings/bride-6825609_1920.jpg);
+            background-image: url(../images/weddings/bride-6825609_1920.jpg);
           }
           .item-4 {
-            background-image: url(\.\./images/weddings/marriage-7201450_1920.jpg);
+            background-image: url(../images/weddings/marriage-7201450_1920.jpg);
             grid-column: 2/3;
             grid-row: 2/4;
           }
           .item-5 {
-            background-image: url(\.\./images/weddings/wedding-1745240_1920.jpg);
+            background-image: url(../images/weddings/wedding-1745240_1920.jpg);
           }
           .item-6 {
-            background-image: url(\.\./images/weddings/wedding-4445670_1920.jpg);
+            background-image: url(../images/weddings/wedding-4445670_1920.jpg);
           }
         }
 
         &.outdoor {
           .item-1 {
-            background-image: url(\.\./images/outdoor/cherry-blossoms-5005234_1920.jpg);
+            background-image: url(../images/outdoor/cherry-blossoms-5005234_1920.jpg);
 
             grid-column: 1/2;
             grid-row: 1/3;
           }
           .item-2 {
-            background-image: url(\.\./images/outdoor/nature-7398357_1920.jpg);
+            background-image: url(../images/outdoor/nature-7398357_1920.jpg);
           }
           .item-3 {
-            background-image: url(\.\./images/outdoor/sea-7212891_1920.jpg);
+            background-image: url(../images/outdoor/sea-7212891_1920.jpg);
           }
           .item-4 {
-            background-image: url(\.\./images/outdoor/vintage-photograph-6876622_1920.jpg);
+            background-image: url(../images/outdoor/vintage-photograph-6876622_1920.jpg);
           }
           .item-5 {
-            background-image: url(\.\./images/outdoor/woman-5502771_1920.jpg);
+            background-image: url(../images/outdoor/woman-5502771_1920.jpg);
           }
           .item-6 {
-            background-image: url(\.\./images/outdoor/woman-6610442_1920.jpg);
+            background-image: url(../images/outdoor/woman-6610442_1920.jpg);
             grid-column: 2/3;
             grid-row: 3/5;
           }
@@ -406,24 +406,24 @@ body {
           }
 
           .item-1 {
-            background-image: url(\.\./images/studio/male-9687749_1920.jpg);
+            background-image: url(../images/studio/male-9687749_1920.jpg);
           }
           .item-2 {
-            background-image: url(\.\./images/studio/living-room-8954155_1920.jpg);
+            background-image: url(../images/studio/living-room-8954155_1920.jpg);
           }
           .item-3 {
-            background-image: url(\.\./images/studio/photography-1850469_1280.jpg);
+            background-image: url(../images/studio/photography-1850469_1280.jpg);
           }
           .item-4 {
-            background-image: url(\.\./images/studio/portrait-photography-9651674_1920.jpg);
+            background-image: url(../images/studio/portrait-photography-9651674_1920.jpg);
           }
           .item-5 {
-            background-image: url(\.\./images/studio/woman-2178816_1920.jpg);
+            background-image: url(../images/studio/woman-2178816_1920.jpg);
             grid-column: 1/2;
             grid-row: 3/5;
           }
           .item-6 {
-            background-image: url(\.\./images/studio/woman-8180642_1920.jpg);
+            background-image: url(../images/studio/woman-8180642_1920.jpg);
 
             grid-column: 2/3;
             grid-row: 3/5;
