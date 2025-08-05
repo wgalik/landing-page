@@ -74,6 +74,9 @@ body {
       margin: 0 auto;
 
       #logo {
+        @media (min-width: breakpoint(sm)) {
+          margin-left: 10px;
+        }
         a {
           @include link;
         }
@@ -81,14 +84,15 @@ body {
       .nav-menu {
         @include flexbox;
         display: none;
-        align-items: start;
+        // align-items: center;
+        justify-items: center;
         gap: 15px;
         padding: 20px 20px 10px;
         position: absolute;
         top: 50px;
         left: -10px;
-        background-color: rgba(255, 255, 255, 0.2);
-        width: 40vw;
+        background-color: rgba(255, 255, 255, 0.25);
+        width: 100vw;
         @media (min-width: breakpoint(sm)) {
           display: flex;
           flex-direction: row;
@@ -107,6 +111,7 @@ body {
         li {
           list-style: none;
           width: 100%;
+          text-align: center;
           &:hover {
             text-decoration: underline;
           }
@@ -411,13 +416,21 @@ body {
     background-color: 4;
     padding: 15px;
     margin-bottom: 5px;
-    h2 {
-      font-family: $secondFont;
-      letter-spacing: 1px;
-    }
-    p {
-      font-size: $mainFont;
-      padding: 5px 5px;
+    margin: 0 auto;
+    #contact {
+      width: 100%;
+      max-width: 1200px;
+      h2 {
+        font-family: $secondFont;
+        letter-spacing: 1px;
+      }
+      p {
+        font-size: $mainFont;
+        padding: 5px 5px;
+        span {
+          cursor: pointer;
+        }
+      }
     }
   }
 }
