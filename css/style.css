@@ -141,7 +141,6 @@ body header nav #hamburger.open span:nth-child(3) {
 body main section {
   width: 100%;
   padding: 15px;
-  border: 2px solid red;
   background-color: rgb(255, 255, 255);
   scroll-margin-top: 60px;
 }
@@ -435,6 +434,8 @@ body main #services {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 25px;
+  gap: 25px;
 }
 @media (min-width: 576px) {
   body main #services {
@@ -468,6 +469,7 @@ body main #services article div#product-icon {
 body main #services article h3 {
   font-family: "Playfair Display", serif;
   color: black;
+  text-align: center;
 }
 body main #services article p {
   font-family: "Lato", sans-serif;

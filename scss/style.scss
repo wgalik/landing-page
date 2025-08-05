@@ -164,7 +164,6 @@ body {
     section {
       width: 100%;
       padding: 15px;
-      border: 2px solid red;
       background-color: rgb(255, 255, 255);
       scroll-margin-top: 60px;
       &#home {
@@ -434,6 +433,8 @@ body {
     }
     #services {
       @include flexbox;
+      padding: 25px;
+      gap: 25px;
       @media (min-width: breakpoint(sm)) {
         height: 55vh;
         flex-direction: row;
@@ -459,6 +460,7 @@ body {
         h3 {
           font-family: $secondFont;
           color: black;
+          text-align: center;
         }
         p {
           font-family: $mainFont;
