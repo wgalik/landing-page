@@ -339,68 +339,68 @@ body main #portfolio .grid-container .grid-item:hover {
   filter: grayscale(0);
 }
 body main #portfolio .grid-container.portraits .item-1 {
-  background-image: url(../images/portraits/dark-portraits-4717873_1920.jpg);
+  background-image: url(\.\./images/portraits/dark-portraits-4717873_1920.jpg);
 }
 body main #portfolio .grid-container.portraits .item-2 {
-  background-image: url(../images/portraits/girl-1607404_1920.jpg);
+  background-image: url(\.\./images/portraits/girl-1607404_1920.jpg);
 }
 body main #portfolio .grid-container.portraits .item-3 {
-  background-image: url(../images/portraits/peter-of-moravia-7468859_1920.jpg);
+  background-image: url(\.\./images/portraits/peter-of-moravia-7468859_1920.jpg);
 }
 body main #portfolio .grid-container.portraits .item-4 {
-  background-image: url(../images/portraits/portraits-2781035_1920.jpg);
+  background-image: url(\.\./images/portraits/portraits-2781035_1920.jpg);
   grid-column: 2/3;
   grid-row: 2/4;
 }
 body main #portfolio .grid-container.portraits .item-5 {
-  background-image: url(../images/portraits/portraits-639856_1920.jpg);
+  background-image: url(\.\./images/portraits/portraits-639856_1920.jpg);
   grid-column: 1/2;
   grid-row: 3/5;
 }
 body main #portfolio .grid-container.portraits .item-6 {
-  background-image: url(../images/portraits/travel-4947206_1920.jpg);
+  background-image: url(\.\./images/portraits/travel-4947206_1920.jpg);
 }
 body main #portfolio .grid-container.weddings .item-1 {
-  background-image: url(../images/weddings/bride-6230420_1920.jpg);
+  background-image: url(\.\./images/weddings/bride-6230420_1920.jpg);
   grid-column: 1/2;
   grid-row: 1/3;
 }
 body main #portfolio .grid-container.weddings .item-2 {
-  background-image: url(../images/weddings/bride-6388640_1920.jpg);
+  background-image: url(\.\./images/weddings/bride-6388640_1920.jpg);
 }
 body main #portfolio .grid-container.weddings .item-3 {
-  background-image: url(../images/weddings/bride-6825609_1920.jpg);
+  background-image: url(\.\./images/weddings/bride-6825609_1920.jpg);
 }
 body main #portfolio .grid-container.weddings .item-4 {
-  background-image: url(../images/weddings/marriage-7201450_1920.jpg);
+  background-image: url(\.\./images/weddings/marriage-7201450_1920.jpg);
   grid-column: 2/3;
   grid-row: 2/4;
 }
 body main #portfolio .grid-container.weddings .item-5 {
-  background-image: url(../images/weddings/wedding-1745240_1920.jpg);
+  background-image: url(\.\./images/weddings/wedding-1745240_1920.jpg);
 }
 body main #portfolio .grid-container.weddings .item-6 {
-  background-image: url(../images/weddings/wedding-4445670_1920.jpg);
+  background-image: url(\.\./images/weddings/wedding-4445670_1920.jpg);
 }
 body main #portfolio .grid-container.outdoor .item-1 {
-  background-image: url(../images/outdoor/cherry-blossoms-5005234_1920.jpg);
+  background-image: url(\.\./images/outdoor/cherry-blossoms-5005234_1920.jpg);
   grid-column: 1/2;
   grid-row: 1/3;
 }
 body main #portfolio .grid-container.outdoor .item-2 {
-  background-image: url(../images/outdoor/nature-7398357_1920.jpg);
+  background-image: url(\.\./images/outdoor/nature-7398357_1920.jpg);
 }
 body main #portfolio .grid-container.outdoor .item-3 {
-  background-image: url(../images/outdoor/sea-7212891_1920.jpg);
+  background-image: url(\.\./images/outdoor/sea-7212891_1920.jpg);
 }
 body main #portfolio .grid-container.outdoor .item-4 {
-  background-image: url(../images/outdoor/vintage-photograph-6876622_1920.jpg);
+  background-image: url(\.\./images/outdoor/vintage-photograph-6876622_1920.jpg);
 }
 body main #portfolio .grid-container.outdoor .item-5 {
-  background-image: url(../images/outdoor/woman-5502771_1920.jpg);
+  background-image: url(\.\./images/outdoor/woman-5502771_1920.jpg);
 }
 body main #portfolio .grid-container.outdoor .item-6 {
-  background-image: url(../images/outdoor/woman-6610442_1920.jpg);
+  background-image: url(\.\./images/outdoor/woman-6610442_1920.jpg);
   grid-column: 2/3;
   grid-row: 3/5;
 }
@@ -408,24 +408,24 @@ body main #portfolio .grid-container.studio .grid-item {
   background-position: center top;
 }
 body main #portfolio .grid-container.studio .item-1 {
-  background-image: url(../images/studio/male-9687749_1920.jpg);
+  background-image: url(\.\./images/studio/male-9687749_1920.jpg);
 }
 body main #portfolio .grid-container.studio .item-2 {
-  background-image: url(../images/studio/living-room-8954155_1920.jpg);
+  background-image: url(\.\./images/studio/living-room-8954155_1920.jpg);
 }
 body main #portfolio .grid-container.studio .item-3 {
-  background-image: url(../images/studio/photography-1850469_1280.jpg);
+  background-image: url(\.\./images/studio/photography-1850469_1280.jpg);
 }
 body main #portfolio .grid-container.studio .item-4 {
-  background-image: url(../images/studio/portrait-photography-9651674_1920.jpg);
+  background-image: url(\.\./images/studio/portrait-photography-9651674_1920.jpg);
 }
 body main #portfolio .grid-container.studio .item-5 {
-  background-image: url(../images/studio/woman-2178816_1920.jpg);
+  background-image: url(\.\./images/studio/woman-2178816_1920.jpg);
   grid-column: 1/2;
   grid-row: 3/5;
 }
 body main #portfolio .grid-container.studio .item-6 {
-  background-image: url(../images/studio/woman-8180642_1920.jpg);
+  background-image: url(\.\./images/studio/woman-8180642_1920.jpg);
   grid-column: 2/3;
   grid-row: 3/5;
 }
