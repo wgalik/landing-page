@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 *,
 ::after,
 ::before {
@@ -8,9 +9,13 @@
 
 body {
   background-color: black;
-  color: beige;
+  color: rgb(225, 225, 225);
   scroll-behavior: smooth;
   width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,10 +25,12 @@ body header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 99;
   background-color: black;
   width: 100%;
-  height: 50px;
+  height: 60px;
   padding: 10px;
+  font-family: "Lato", sans-serif;
 }
 body header nav {
   display: flex;
@@ -32,36 +39,367 @@ body header nav {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  width: inherit;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-body header nav #logo {
-  flex: 1 1 50%;
+body header nav #logo a {
+  text-decoration: none;
+  color: "Lato", sans-serif;
+  color: inherit;
 }
-body header nav #logo img {
-  display: inline-block;
-  margin-left: 10px;
-  max-width: 75px;
-  filter: invert(1);
-}
-body header nav ul {
+body header nav .nav-menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  justify-content: end;
-  gap: 10px;
-  flex: 1 1 50%;
+  display: none;
+  align-items: start;
+  gap: 15px;
+  padding: 20px 20px 10px;
+  position: absolute;
+  top: 50px;
+  left: -10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 40vw;
 }
-body header nav ul li {
+@media (min-width: 576px) {
+  body header nav .nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-basis: 60%;
+    position: static;
+    background-color: transparent;
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  body header nav .nav-menu {
+    flex-basis: 50%;
+  }
+}
+body header nav .nav-menu.active {
+  display: flex;
+}
+body header nav .nav-menu li {
   list-style: none;
+  width: 100%;
 }
-body header nav ul li a {
+body header nav .nav-menu li:hover {
+  text-decoration: underline;
+}
+body header nav .nav-menu li a {
+  font-size: 1rem;
   text-decoration: none;
+  color: "Lato", sans-serif;
+  color: inherit;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+body header nav #hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+}
+@media (min-width: 576px) {
+  body header nav #hamburger {
+    display: none;
+  }
+}
+body header nav #hamburger span {
+  height: 3px;
+  width: 100%;
+  background-color: beige;
 }
 body main section {
-  width: 100vw;
+  width: 100%;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  scroll-margin-top: 60px;
+}
+body main section#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 50vh;
-  border: 2px solid red;
-  background-color: bisque;
+  justify-content: flex-end;
+  align-items: start;
+  gap: 10px;
+  padding-right: 25px;
+  background-image: linear-gradient(to bottom, transparent 55%, rgb(255, 255, 255)), url("../images/stuart-bailey-8106891_1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 60px;
+  color: black;
+}
+body main section#home h1 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.5px;
+  font-size: 2rem;
+}
+body main section#home button {
+  font-family: "Lato", sans-serif;
+  padding: 3px 7px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+body main section#home button:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+body main section#home button a {
+  text-decoration: none;
+  color: "Lato", sans-serif;
+  color: inherit;
+}
+body main #about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 45px;
+}
+body main #about article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  box-shadow: 0 0 5px black;
+}
+body main #about article .img {
+  background-image: url("../images/man-2178721_1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 75%;
+  aspect-ratio: 1/1;
+  margin: 10px;
+  filter: grayscale(1);
+}
+body main #about article h2 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+body main #about article p {
+  font-family: "Lato", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+body main #portfolio {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+body main #portfolio h2 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+}
+body main #portfolio button {
+  font-family: "Lato", sans-serif;
+  border: none;
+  color: rgb(225, 225, 225);
+  margin: 5px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  font-size: 0.9rem;
+  line-height: 1;
+  cursor: pointer;
+}
+body main #portfolio button:nth-child(1) {
+  text-decoration: underline;
+}
+body main #portfolio button:hover {
+  text-decoration: underline;
+}
+body main #portfolio .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+body main #portfolio .grid-container .grid-item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(1);
+  transition: all 0.2s linear;
+}
+body main #portfolio .grid-container .grid-item:hover {
+  filter: grayscale(0);
+}
+body main #portfolio .grid-container.portraits .item-1 {
+  background-image: url(../images/portraits/dark-portraits-4717873_1920.jpg);
+}
+body main #portfolio .grid-container.portraits .item-2 {
+  background-image: url(../images/portraits/girl-1607404_1920.jpg);
+}
+body main #portfolio .grid-container.portraits .item-3 {
+  background-image: url(../images/portraits/peter-of-moravia-7468859_1920.jpg);
+}
+body main #portfolio .grid-container.portraits .item-4 {
+  background-image: url(../images/portraits/portraits-2781035_1920.jpg);
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+body main #portfolio .grid-container.portraits .item-5 {
+  background-image: url(../images/portraits/portraits-639856_1920.jpg);
+  grid-column: 1/2;
+  grid-row: 3/5;
+}
+body main #portfolio .grid-container.portraits .item-6 {
+  background-image: url(../images/portraits/travel-4947206_1920.jpg);
+}
+body main #portfolio .grid-container.weddings .item-1 {
+  background-image: url(../images/weddings/bride-6230420_1920.jpg);
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+body main #portfolio .grid-container.weddings .item-2 {
+  background-image: url(../images/weddings/bride-6388640_1920.jpg);
+}
+body main #portfolio .grid-container.weddings .item-3 {
+  background-image: url(../images/weddings/bride-6825609_1920.jpg);
+}
+body main #portfolio .grid-container.weddings .item-4 {
+  background-image: url(../images/weddings/marriage-7201450_1920.jpg);
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+body main #portfolio .grid-container.weddings .item-5 {
+  background-image: url(../images/weddings/wedding-1745240_1920.jpg);
+}
+body main #portfolio .grid-container.weddings .item-6 {
+  background-image: url(../images/weddings/wedding-4445670_1920.jpg);
+}
+body main #portfolio .grid-container.outdoor .item-1 {
+  background-image: url(../images/outdoor/cherry-blossoms-5005234_1920.jpg);
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+body main #portfolio .grid-container.outdoor .item-2 {
+  background-image: url(../images/outdoor/nature-7398357_1920.jpg);
+}
+body main #portfolio .grid-container.outdoor .item-3 {
+  background-image: url(../images/outdoor/sea-7212891_1920.jpg);
+}
+body main #portfolio .grid-container.outdoor .item-4 {
+  background-image: url(../images/outdoor/vintage-photograph-6876622_1920.jpg);
+}
+body main #portfolio .grid-container.outdoor .item-5 {
+  background-image: url(../images/outdoor/woman-5502771_1920.jpg);
+}
+body main #portfolio .grid-container.outdoor .item-6 {
+  background-image: url(../images/outdoor/woman-6610442_1920.jpg);
+  grid-column: 2/3;
+  grid-row: 3/5;
+}
+body main #portfolio .grid-container.studio .grid-item {
+  background-position: center top;
+}
+body main #portfolio .grid-container.studio .item-1 {
+  background-image: url(../images/studio/male-9687749_1920.jpg);
+}
+body main #portfolio .grid-container.studio .item-2 {
+  background-image: url(../images/studio/living-room-8954155_1920.jpg);
+}
+body main #portfolio .grid-container.studio .item-3 {
+  background-image: url(../images/studio/photography-1850469_1280.jpg);
+}
+body main #portfolio .grid-container.studio .item-4 {
+  background-image: url(../images/studio/portrait-photography-9651674_1920.jpg);
+}
+body main #portfolio .grid-container.studio .item-5 {
+  background-image: url(../images/studio/woman-2178816_1920.jpg);
+  grid-column: 1/2;
+  grid-row: 3/5;
+}
+body main #portfolio .grid-container.studio .item-6 {
+  background-image: url(../images/studio/woman-8180642_1920.jpg);
+  grid-column: 2/3;
+  grid-row: 3/5;
+}
+body main #services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main #services article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+body main #services article div {
+  height: 45px;
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body main #services article div#portrait-icon {
+  background-image: url(../images/portrait_10446913.png);
+}
+body main #services article div#wedding-icon {
+  background-image: url(../images/rings_3656885.png);
+}
+body main #services article div#product-icon {
+  background-image: url(../images/mode-landscape_10447031.png);
+}
+body main #services article h3 {
+  font-family: "Playfair Display", serif;
+  color: black;
+}
+body main #services article p {
+  font-family: "Lato", sans-serif;
+  color: black;
+  margin-bottom: 15px;
+  padding: 0 25px;
+  text-align: center;
+}
+body footer {
+  width: 100vw;
+  background-color: 4;
+  padding: 15px;
+  margin-bottom: 5px;
+}
+body footer h2 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+}
+body footer p {
+  font-size: "Lato", sans-serif;
+  padding: 5px 5px;
 }/*# sourceMappingURL=style.css.map */

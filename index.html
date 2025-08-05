@@ -8,6 +8,13 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="\./css/style.css" />
     <script src="script/script.js"></script>
     <title>Document</title>
@@ -18,8 +25,8 @@
         <div id="logo">
           <a href="#">
             <svg
-              width="50"
-              height="50"
+              width="40"
+              height="40"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -34,15 +41,15 @@
             </svg>
           </a>
         </div>
-        <ul>
-          <li></li>
+        <ul class="nav-menu">
           <li><a href="#about">About me</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <button id="hamburger">
-          <svg
+          <span></span><span></span><span></span>
+          <!-- <svg
             width="20"
             height="20"
             fill="currentColor"
@@ -54,15 +61,82 @@
               d="M4.5 13.5A.5.5 0 015 13h10a.5.5 0 010 1H5a.5.5 0 01-.5-.5zm0-4A.5.5 0 015 9h10a.5.5 0 010 1H5a.5.5 0 01-.5-.5zm0-4A.5.5 0 015 5h10a.5.5 0 010 1H5a.5.5 0 01-.5-.5z"
               clip-rule="evenodd"
             />
-          </svg>
+          </svg> -->
         </button>
       </nav>
     </header>
     <main>
-      <section id="about"></section>
-      <section id="portfolio"></section>
-      <section id="services"></section>
+      <section id="home">
+        <h1>Photography</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. In cumque
+          dignissimos eius eaque voluptas! Temporibus!
+        </p>
+        <div>
+          <button><a href="#portfolio">My Portfolio</a></button>
+          <button><a href="#contact">Contact</a></button>
+        </div>
+      </section>
+      <section id="about">
+        <article>
+          <div class="img"></div>
+          <div>
+            <h2>About me</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum ea
+              nesciunt ratione, cumque tempore consequuntur, culpa placeat
+              officiis ducimus aliquid asperiores laboriosam similique, impedit
+              vitae!
+            </p>
+          </div>
+        </article>
+      </section>
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div>
+          <button id="portraits">Portraits</button
+          ><button id="weddings">Weddings</button
+          ><button id="outdoor">Outdoor sessions</button
+          ><button id="studio">Studio sessions</button>
+        </div>
+        <div class="grid-container portraits">
+          <div class="grid-item item-1"></div>
+          <div class="grid-item item-2"></div>
+          <div class="grid-item item-3"></div>
+          <div class="grid-item item-4"></div>
+          <div class="grid-item item-5"></div>
+          <div class="grid-item item-6"></div>
+        </div>
+      </section>
+      <section id="services">
+        <article>
+          <div id="portrait-icon"></div>
+          <h3>Portrait Photography</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        </article>
+        <article>
+          <div id="wedding-icon"></div>
+          <h3>Wedding Photography</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        </article>
+        <article>
+          <div id="product-icon"></div>
+          <h3>Product Photography</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        </article>
+      </section>
     </main>
-    <footer></footer>
+    <footer id="contact">
+      <h2>Contact</h2>
+      <p>example@example.com</p>
+      <p>+44 123 456 789</p>
+      <p>www.example.com</p>
+      <p>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-500px"></i>
+        <i class="fa-brands fa-pinterest"></i>
+      </p>
+    </footer>
   </body>
 </html>
