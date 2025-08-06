@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Federo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 *,
 ::after,
 ::before {
@@ -8,8 +8,8 @@
 }
 
 body {
-  background-color: black;
-  color: rgb(225, 225, 225);
+  background-color: #1a1a1a;
+  color: #f5f5f5;
   scroll-behavior: smooth;
   width: 100%;
   margin: 0 auto;
@@ -26,7 +26,7 @@ body header {
   top: 0;
   left: 0;
   z-index: 99;
-  background-color: black;
+  background-color: #1a1a1a;
   width: 100%;
   height: 60px;
   padding: 10px;
@@ -66,7 +66,7 @@ body header nav .nav-menu {
   position: absolute;
   top: 50px;
   left: -10px;
-  background-color: rgb(58, 58, 58);
+  background-color: #3a3a3a;
   width: 100vw;
 }
 @media (min-width: 576px) {
@@ -127,7 +127,7 @@ body header nav #hamburger {
 body header nav #hamburger span {
   height: 3px;
   width: 100%;
-  background-color: rgb(225, 225, 225);
+  background-color: #f5f5f5;
 }
 body header nav #hamburger.open span:nth-child(1) {
   opacity: 0;
@@ -141,7 +141,7 @@ body header nav #hamburger.open span:nth-child(3) {
 body main section {
   width: 100%;
   padding: 15px;
-  background-color: rgb(255, 255, 255);
+  background-color: #f5f5f5;
   scroll-margin-top: 60px;
 }
 body main section#home {
@@ -154,7 +154,7 @@ body main section#home {
   align-items: start;
   gap: 10px;
   padding-right: 25px;
-  background-image: linear-gradient(to bottom, transparent 55%, rgb(255, 255, 255)), url("../images/stuart-bailey-8106891_1920.jpg");
+  background-image: linear-gradient(to bottom, transparent 55%, #f5f5f5), url("../images/stuart-bailey-8106891_1920.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -172,8 +172,8 @@ body main section#home {
   }
 }
 body main section#home h1 {
-  font-family: "Playfair Display", serif;
-  letter-spacing: 0.5px;
+  font-family: "Federo", sans-serif;
+  letter-spacing: 2px;
   font-size: 2rem;
 }
 @media (min-width: 576px) {
@@ -185,6 +185,7 @@ body main section#home h1 {
   body main section#home p {
     text-align: center;
     padding: 0 50px;
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 768px) {
@@ -195,7 +196,7 @@ body main section#home h1 {
 body main section#home button {
   font-family: "Lato", sans-serif;
   padding: 3px 7px;
-  border: 1px solid black;
+  border: 1px solid #1a1a1a;
   border-radius: 10px;
   margin: 5px;
   background-color: transparent;
@@ -203,9 +204,14 @@ body main section#home button {
   font-size: 0.9rem;
   line-height: 1;
 }
+@media (min-width: 576px) {
+  body main section#home button {
+    font-size: 1rem;
+  }
+}
 body main section#home button:hover {
-  background-color: rgb(0, 0, 0);
-  color: rgb(225, 225, 225);
+  background-color: #1a1a1a;
+  color: #f5f5f5;
 }
 body main section#home button a {
   text-decoration: none;
@@ -227,20 +233,26 @@ body main #about article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(58, 58, 58);
+  background-color: #3a3a3a;
   padding: 20px;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px #1a1a1a;
+  max-width: 1200px;
 }
 @media (min-width: 576px) {
   body main #about article {
     flex-direction: row;
+    align-items: flex-start;
     margin: 100px 0;
   }
 }
 @media (min-width: 768px) {
   body main #about article {
     width: 75%;
-    max-width: 1200px;
+  }
+}
+@media (min-width: 1200px) {
+  body main #about article {
+    align-items: center;
   }
 }
 body main #about article .img {
@@ -251,11 +263,17 @@ body main #about article .img {
   width: 75%;
   aspect-ratio: 1/1;
   margin: 10px;
-  filter: grayscale(1);
+  filter: brightness(1.5) grayscale(1);
+}
+@media (min-width: 576px) {
+  body main #about article .img {
+    align-self: start;
+  }
 }
 body main #about article h2 {
-  font-family: "Playfair Display", serif;
-  letter-spacing: 1px;
+  padding-top: 10px;
+  font-family: "Federo", sans-serif;
+  letter-spacing: 2px;
   margin-bottom: 5px;
 }
 @media (min-width: 576px) {
@@ -278,7 +296,7 @@ body main #about article p {
   }
 }
 body main #portfolio {
-  background-color: black;
+  background-color: #1a1a1a;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -286,19 +304,29 @@ body main #portfolio {
   gap: 10px;
 }
 body main #portfolio h2 {
-  font-family: "Playfair Display", serif;
-  letter-spacing: 1px;
+  font-family: "Federo", sans-serif;
+  letter-spacing: 2px;
 }
 body main #portfolio button {
   font-family: "Lato", sans-serif;
   border: none;
-  color: rgb(225, 225, 225);
+  color: #f5f5f5;
   margin: 5px;
   background-color: transparent;
   transition: all 0.3s ease-in-out;
   font-size: 0.9rem;
   line-height: 1;
   cursor: pointer;
+}
+@media (min-width: 576px) {
+  body main #portfolio button {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  body main #portfolio button {
+    font-size: 1.1rem;
+  }
 }
 body main #portfolio button:nth-child(1) {
   text-decoration: underline;
@@ -326,6 +354,7 @@ body main #portfolio .grid-container {
   body main #portfolio .grid-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
   }
 }
 body main #portfolio .grid-container .grid-item {
@@ -360,6 +389,63 @@ body main #portfolio .grid-container.portraits .item-5 {
 body main #portfolio .grid-container.portraits .item-6 {
   background-image: url(../images/portraits/travel-4947206_1920.jpg);
 }
+@media (min-width: 576px) {
+  body main #portfolio .grid-container.portraits .item-1 {
+    background-image: url(../images/portraits/dark-portraits-4717873_1920.jpg);
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  body main #portfolio .grid-container.portraits .item-2 {
+    background-image: url(../images/portraits/girl-1607404_1920.jpg);
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+  body main #portfolio .grid-container.portraits .item-3 {
+    background-image: url(../images/portraits/peter-of-moravia-7468859_1920.jpg);
+  }
+  body main #portfolio .grid-container.portraits .item-4 {
+    background-image: url(../images/portraits/portraits-2781035_1920.jpg);
+  }
+  body main #portfolio .grid-container.portraits .item-5 {
+    background-image: url(../images/portraits/portraits-639856_1920.jpg);
+    grid-row: 3/4;
+  }
+  body main #portfolio .grid-container.portraits .item-6 {
+    background-image: url(../images/portraits/travel-4947206_1920.jpg);
+  }
+}
+@media (min-width: 768px) {
+  body main #portfolio .grid-container.portraits .item-1 {
+    background-image: url(../images/portraits/dark-portraits-4717873_1920.jpg);
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  body main #portfolio .grid-container.portraits .item-2 {
+    background-image: url(../images/portraits/girl-1607404_1920.jpg);
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  body main #portfolio .grid-container.portraits .item-3 {
+    background-image: url(../images/portraits/peter-of-moravia-7468859_1920.jpg);
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+  body main #portfolio .grid-container.portraits .item-4 {
+    background-image: url(../images/portraits/portraits-2781035_1920.jpg);
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  body main #portfolio .grid-container.portraits .item-5 {
+    background-image: url(../images/portraits/portraits-639856_1920.jpg);
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  body main #portfolio .grid-container.portraits .item-6 {
+    background-image: url(../images/portraits/travel-4947206_1920.jpg);
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+}
 body main #portfolio .grid-container.weddings .item-1 {
   background-image: url(../images/weddings/bride-6230420_1920.jpg);
   grid-column: 1/2;
@@ -381,6 +467,58 @@ body main #portfolio .grid-container.weddings .item-5 {
 }
 body main #portfolio .grid-container.weddings .item-6 {
   background-image: url(../images/weddings/wedding-4445670_1920.jpg);
+}
+@media (min-width: 576px) {
+  body main #portfolio .grid-container.weddings .item-1 {
+    background-image: url(../images/weddings/bride-6230420_1920.jpg);
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  body main #portfolio .grid-container.weddings .item-2 {
+    background-image: url(../images/weddings/bride-6388640_1920.jpg);
+  }
+  body main #portfolio .grid-container.weddings .item-3 {
+    background-image: url(../images/weddings/bride-6825609_1920.jpg);
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+  body main #portfolio .grid-container.weddings .item-4 {
+    background-image: url(../images/weddings/marriage-7201450_1920.jpg);
+  }
+  body main #portfolio .grid-container.weddings .item-5 {
+    background-image: url(../images/weddings/wedding-1745240_1920.jpg);
+  }
+  body main #portfolio .grid-container.weddings .item-6 {
+    background-image: url(../images/weddings/wedding-4445670_1920.jpg);
+  }
+}
+@media (min-width: 768px) {
+  body main #portfolio .grid-container.weddings .item-1 {
+    background-image: url(../images/weddings/bride-6230420_1920.jpg);
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  body main #portfolio .grid-container.weddings .item-2 {
+    background-image: url(../images/weddings/bride-6388640_1920.jpg);
+  }
+  body main #portfolio .grid-container.weddings .item-3 {
+    background-image: url(../images/weddings/bride-6825609_1920.jpg);
+    grid-row: 2/3;
+  }
+  body main #portfolio .grid-container.weddings .item-4 {
+    background-image: url(../images/weddings/marriage-7201450_1920.jpg);
+    grid-row: 2/3;
+  }
+  body main #portfolio .grid-container.weddings .item-5 {
+    background-image: url(../images/weddings/wedding-1745240_1920.jpg);
+    grid-column: 3/5;
+    grid-row: 1/2;
+  }
+  body main #portfolio .grid-container.weddings .item-6 {
+    background-image: url(../images/weddings/wedding-4445670_1920.jpg);
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
 }
 body main #portfolio .grid-container.outdoor .item-1 {
   background-image: url(../images/outdoor/cherry-blossoms-5005234_1920.jpg);
@@ -404,6 +542,53 @@ body main #portfolio .grid-container.outdoor .item-6 {
   grid-column: 2/3;
   grid-row: 3/5;
 }
+@media (min-width: 576px) {
+  body main #portfolio .grid-container.outdoor .item-1 {
+    background-image: url(../images/outdoor/cherry-blossoms-5005234_1920.jpg);
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  body main #portfolio .grid-container.outdoor .item-2 {
+    background-image: url(../images/outdoor/nature-7398357_1920.jpg);
+  }
+  body main #portfolio .grid-container.outdoor .item-3 {
+    background-image: url(../images/outdoor/sea-7212891_1920.jpg);
+  }
+  body main #portfolio .grid-container.outdoor .item-4 {
+    background-image: url(../images/outdoor/vintage-photograph-6876622_1920.jpg);
+  }
+  body main #portfolio .grid-container.outdoor .item-5 {
+    background-image: url(../images/outdoor/woman-5502771_1920.jpg);
+  }
+  body main #portfolio .grid-container.outdoor .item-6 {
+    background-image: url(../images/outdoor/woman-6610442_1920.jpg);
+    grid-row: 3/4;
+  }
+}
+@media (min-width: 768px) {
+  body main #portfolio .grid-container.outdoor .item-1 {
+    background-image: url(../images/outdoor/cherry-blossoms-5005234_1920.jpg);
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  body main #portfolio .grid-container.outdoor .item-2 {
+    background-image: url(../images/outdoor/nature-7398357_1920.jpg);
+  }
+  body main #portfolio .grid-container.outdoor .item-3 {
+    background-image: url(../images/outdoor/sea-7212891_1920.jpg);
+  }
+  body main #portfolio .grid-container.outdoor .item-4 {
+    background-image: url(../images/outdoor/vintage-photograph-6876622_1920.jpg);
+  }
+  body main #portfolio .grid-container.outdoor .item-5 {
+    background-image: url(../images/outdoor/woman-5502771_1920.jpg);
+    grid-column: 3/5;
+  }
+  body main #portfolio .grid-container.outdoor .item-6 {
+    background-image: url(../images/outdoor/woman-6610442_1920.jpg);
+    grid-row: 2/3;
+  }
+}
 body main #portfolio .grid-container.studio .grid-item {
   background-position: center top;
 }
@@ -421,13 +606,60 @@ body main #portfolio .grid-container.studio .item-4 {
 }
 body main #portfolio .grid-container.studio .item-5 {
   background-image: url(../images/studio/woman-2178816_1920.jpg);
-  grid-column: 1/2;
   grid-row: 3/5;
 }
 body main #portfolio .grid-container.studio .item-6 {
   background-image: url(../images/studio/woman-8180642_1920.jpg);
-  grid-column: 2/3;
   grid-row: 3/5;
+}
+@media (min-width: 576px) {
+  body main #portfolio .grid-container.studio .item-1 {
+    background-image: url(../images/studio/male-9687749_1920.jpg);
+  }
+  body main #portfolio .grid-container.studio .item-2 {
+    background-image: url(../images/studio/living-room-8954155_1920.jpg);
+    grid-column: 2/4;
+    grid-row: 1/3;
+  }
+  body main #portfolio .grid-container.studio .item-3 {
+    background-image: url(../images/studio/photography-1850469_1280.jpg);
+  }
+  body main #portfolio .grid-container.studio .item-4 {
+    background-image: url(../images/studio/portrait-photography-9651674_1920.jpg);
+  }
+  body main #portfolio .grid-container.studio .item-5 {
+    background-image: url(../images/studio/woman-2178816_1920.jpg);
+    grid-row: 3/4;
+  }
+  body main #portfolio .grid-container.studio .item-6 {
+    background-image: url(../images/studio/woman-8180642_1920.jpg);
+    grid-row: 3/4;
+  }
+}
+@media (min-width: 768px) {
+  body main #portfolio .grid-container.studio .item-1 {
+    background-image: url(../images/studio/male-9687749_1920.jpg);
+  }
+  body main #portfolio .grid-container.studio .item-2 {
+    background-image: url(../images/studio/living-room-8954155_1920.jpg);
+    grid-row: 1/2;
+  }
+  body main #portfolio .grid-container.studio .item-3 {
+    background-image: url(../images/studio/photography-1850469_1280.jpg);
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  body main #portfolio .grid-container.studio .item-4 {
+    background-image: url(../images/studio/portrait-photography-9651674_1920.jpg);
+  }
+  body main #portfolio .grid-container.studio .item-5 {
+    background-image: url(../images/studio/woman-2178816_1920.jpg);
+    grid-row: 2/3;
+  }
+  body main #portfolio .grid-container.studio .item-6 {
+    background-image: url(../images/studio/woman-8180642_1920.jpg);
+    grid-row: 2/3;
+  }
 }
 body main #services {
   display: flex;
@@ -467,20 +699,22 @@ body main #services article div#product-icon {
   background-image: url(../images/mode-landscape_10447031.png);
 }
 body main #services article h3 {
-  font-family: "Playfair Display", serif;
-  color: black;
+  font-family: "Federo", sans-serif;
+  letter-spacing: 2px;
+  letter-spacing: 0.5px;
+  color: #1a1a1a;
   text-align: center;
 }
 body main #services article p {
   font-family: "Lato", sans-serif;
-  color: black;
+  color: #1a1a1a;
   margin-bottom: 15px;
   padding: 0 25px;
   text-align: center;
 }
 body footer {
   width: 100vw;
-  background-color: 4;
+  background-color: #1a1a1a;
   padding: 15px;
   margin-bottom: 5px;
   margin: 0 auto;
@@ -488,15 +722,28 @@ body footer {
 @media (min-width: 576px) {
   body footer {
     padding-left: 25px;
+    flex-direction: row;
   }
 }
 body footer #contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
   width: 100%;
   max-width: 1200px;
 }
+@media (min-width: 576px) {
+  body footer #contact {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+}
 body footer #contact h2 {
-  font-family: "Playfair Display", serif;
-  letter-spacing: 1px;
+  font-family: "Federo", sans-serif;
+  letter-spacing: 2px;
 }
 body footer #contact p {
   font-size: "Lato", sans-serif;
