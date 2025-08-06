@@ -307,6 +307,12 @@ body main #portfolio h2 {
   font-family: "Federo", sans-serif;
   letter-spacing: 2px;
 }
+@media (min-width: 576px) {
+  body main #portfolio h2 {
+    margin: 25px;
+    font-size: 2rem;
+  }
+}
 body main #portfolio button {
   font-family: "Lato", sans-serif;
   border: none;

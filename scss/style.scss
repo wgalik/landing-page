@@ -297,6 +297,10 @@ body {
       gap: 10px;
       h2 {
         @include subtitle;
+        @media (min-width: breakpoint(sm)) {
+          margin: 25px;
+          font-size: 2rem;
+        }
       }
       button {
         font-family: $mainFont;
