@@ -327,11 +327,13 @@ body main #portfolio button {
 @media (min-width: 576px) {
   body main #portfolio button {
     font-size: 1rem;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 768px) {
   body main #portfolio button {
     font-size: 1.1rem;
+    margin-bottom: 15px;
   }
 }
 body main #portfolio button:nth-child(1) {

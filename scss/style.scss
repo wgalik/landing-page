@@ -313,9 +313,11 @@ body {
         line-height: 1;
         @media (min-width: breakpoint(sm)) {
           font-size: 1rem;
+          margin-bottom: 10px;
         }
         @media (min-width: breakpoint(md)) {
           font-size: 1.1rem;
+          margin-bottom: 15px;
         }
         cursor: pointer;
         &:nth-child(1) {
