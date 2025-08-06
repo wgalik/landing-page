@@ -302,29 +302,33 @@ body {
           font-size: 2rem;
         }
       }
-      button {
-        font-family: $mainFont;
-        border: none;
-        color: $softWhite;
-        margin: 5px;
-        background-color: transparent;
-        transition: all 0.3s ease-in-out;
-        font-size: 0.9rem;
-        line-height: 1;
-        @media (min-width: breakpoint(sm)) {
-          font-size: 1rem;
-          margin-bottom: 10px;
-        }
-        @media (min-width: breakpoint(md)) {
-          font-size: 1.1rem;
-          margin-bottom: 15px;
-        }
-        cursor: pointer;
-        &:nth-child(1) {
-          text-decoration: underline;
-        }
-        &:hover {
-          text-decoration: underline;
+      .btns {
+        @include flexbox;
+        flex-direction: row;
+        button {
+          font-family: $mainFont;
+          border: none;
+          color: $softWhite;
+          margin: 5px;
+          background-color: transparent;
+          transition: all 0.3s ease-in-out;
+          font-size: 0.9rem;
+          line-height: 1;
+          @media (min-width: breakpoint(sm)) {
+            font-size: 1rem;
+            margin-bottom: 10px;
+          }
+          @media (min-width: breakpoint(md)) {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+          }
+          cursor: pointer;
+          &:nth-child(1) {
+            text-decoration: underline;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
       .grid-container {
