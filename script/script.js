@@ -2,6 +2,7 @@ $(document).ready(function () {
   const navMenu = $(".nav-menu");
   const hamburger = $("#hamburger");
   const home = $("#home");
+  const btnPortfolio = $("#portfolio button");
 
   hamburger.on("click", function () {
     navMenu.toggleClass("active");
@@ -13,29 +14,24 @@ $(document).ready(function () {
     }
   });
 
-  $("#logo").on("click", function () {
-    if (navMenu.hasClass("active")) {
-      closeMenu();
-    }
-  });
-  $(".nav-menu li").on("click", function () {
-    if (navMenu.hasClass("active")) {
-      closeMenu();
-    }
-  });
+  $("#logo").on("click", closeMenu);
+  $(".nav-menu li").on("click", closeMenu);
 
   function closeMenu() {
-    navMenu.removeClass("active");
-    home.css("marginTop", 60);
+    if (navMenu.hasClass("active")) {
+      navMenu.removeClass("active");
+      home.css("marginTop", 60);
+    }
   }
 
-  $("#portfolio button").on("click", function () {
-    $("#portfolio button").css("textDecoration", "none");
-    const gridContainer = $(".grid-container");
+  btnPortfolio.on("click", function () {
     const newClass = $(this).attr("id");
-    gridContainer.hide();
-    gridContainer.removeClass().addClass(`grid-container ${newClass}`);
-    gridContainer.fadeIn(1000);
+    btnPortfolio.css("textDecoration", "none");
+    $(".grid-container")
+      .hide()
+      .removeClass()
+      .addClass(`grid-container ${newClass}`)
+      .fadeIn(1000);
     $(`#${newClass}`).css("textDecoration", "underline");
   });
 });

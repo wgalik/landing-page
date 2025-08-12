@@ -13,7 +13,7 @@ body {
   scroll-behavior: smooth;
   width: 100%;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1000px;
   font-size: 16px;
   font-family: "Lato", sans-serif;
   display: flex;
@@ -41,7 +41,7 @@ body header nav {
   justify-content: space-between;
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 @media (min-width: 576px) {
@@ -236,7 +236,7 @@ body main #about article {
   background-color: #3a3a3a;
   padding: 20px;
   box-shadow: 0 0 5px #1a1a1a;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 @media (min-width: 576px) {
   body main #about article {
@@ -297,11 +297,18 @@ body main #about article p {
 }
 body main #portfolio {
   background-color: #1a1a1a;
+  aspect-ratio: 1/1.2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  justify-content: start;
   gap: 10px;
+}
+@media (min-width: 576px) {
+  body main #portfolio {
+    aspect-ratio: 1/1;
+  }
 }
 body main #portfolio h2 {
   font-family: "Federo", sans-serif;
@@ -356,7 +363,7 @@ body main #portfolio .grid-container {
   gap: 10px;
   width: 100%;
   aspect-ratio: 1/1;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 @media (min-width: 576px) {
   body main #portfolio .grid-container {
@@ -747,7 +754,7 @@ body footer #contact {
   align-items: center;
   align-items: start;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 @media (min-width: 576px) {
   body footer #contact {
