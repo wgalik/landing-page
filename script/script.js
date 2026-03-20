@@ -7,21 +7,16 @@ $(function () {
   hamburger.on("click", function () {
     navMenu.toggleClass("active");
     hamburger.toggleClass("open");
-    if (navMenu.hasClass("active")) {
-      home.css("marginTop", 210);
-    } else {
-      home.css("marginTop", 60);
-    }
   });
 
   $("#logo").on("click", closeMenu);
   $(".nav-menu li").on("click", closeMenu);
 
   function closeMenu() {
-    if (navMenu.hasClass("active")) {
-      navMenu.removeClass("active");
-      home.css("marginTop", 60);
-    }
+    if (!navMenu.hasClass("active")) return;
+    navMenu.removeClass("active");
+    hamburger.removeClass("open");
+    home.css("marginTop", 60);
   }
 
   btnPortfolio.on("click", function () {
