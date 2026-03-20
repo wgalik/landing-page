@@ -50,7 +50,9 @@ $grid-breakpoints: (
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: $softBlack;
   color: $softWhite;
@@ -61,6 +63,7 @@ body {
   font-size: 16px;
   font-family: $mainFont;
   @include flexbox;
+
   header {
     position: fixed;
     top: 0;
@@ -98,7 +101,7 @@ body {
         top: 50px;
         left: -10px;
         background-color: $darkGrey;
-        width: 100vw;
+        width: 100%;
         @media (min-width: breakpoint(sm)) {
           display: flex;
           flex-direction: row;
@@ -179,11 +182,8 @@ body {
         align-items: start;
         gap: 10px;
         padding-right: 25px;
-        background-image: linear-gradient(
-            to bottom,
-            transparent 55%,
-            $softWhite
-          ),
+        background-image:
+          linear-gradient(to bottom, transparent 55%, $softWhite),
           url("../images/stuart-bailey-8106891_1920.jpg");
         @include bg-image;
         margin-top: 60px;
@@ -713,7 +713,7 @@ body {
   }
 
   footer {
-    width: 100vw;
+    width: 100%;
     background-color: $softBlack;
     padding: 15px;
     margin-bottom: 5px;
